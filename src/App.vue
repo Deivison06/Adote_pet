@@ -1,26 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <MainLayout>
+    <!-- Conteúdo da página -->
+    <div>
+      <PetForm></PetForm>
+      <PetList></PetList>
+    </div>
+  </MainLayout>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainLayout from './components/MainLayout.vue';
+import PetForm from './components/PetForm.vue';
+import PetList from './components/PetList.vue';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    MainLayout,
+    PetForm,
+    PetList
   }
-}
+};
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
